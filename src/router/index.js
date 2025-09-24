@@ -6,16 +6,11 @@ const routes = [
         path: "/",
         component: () => import("@/views/HomePage.vue")
     },{
-        name: "LoginPage",
-        path: "/login",
-        component: () => import("@/views/LoginPage.vue")
-    },{
-        name: "RegisterPage",
-        path: "/register",
-        component: () => import("@/views/RegisterPage.vue")
-    },
+        name: "ListPage",
+        path: "/list",
+        component: () => import("@/views/ListPage.vue")
+    }
 ]
-
 
 const router = createRouter({
     routes,
