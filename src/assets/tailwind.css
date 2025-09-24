@@ -20,16 +20,14 @@
   box-shadow: 0 8px 20px rgba(216, 4, 4, 0.15); /* gölge efekti */
 }
 
-/* Ortalamak için dış kapsayıcı */
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;     /* tam ekran yüksekliği */
-  background: #fff;   /* açık gri arka plan */
+  min-height: 100vh;  
+  background: #fff;  
 }
 
-/* Card kutusu */
 .card {
   background: #f7cbe6;
   padding: 24px;
@@ -40,21 +38,17 @@
   text-align: center;
 }
 
-/* Başlık */
 .card h2 {
   margin-bottom: 16px;
   font-size: 20px;
   font-weight: 600;
   color: #333;
 }
-
-/* Input + button kapsayıcı */
 .form-group {
   display: flex;
   gap: 8px;
 }
 
-/* Input alanı */
 .form-group input {
   flex: 1;
   padding: 10px;
@@ -63,7 +57,6 @@
   font-size: 14px;
 }
 
-/* Buton */
 .form-group button {
   padding: 10px 16px;
   color: white;
@@ -75,5 +68,5 @@
 }
 
 .form-group button:hover {
-  background-color: #db2777; /* daha koyu pembe */
+  background-color: #db2777;
 }
