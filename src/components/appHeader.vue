@@ -5,8 +5,15 @@
             ALIŞVERİŞ LİSTEM
         </h1>
 
-        <router-link :to="{ name: 'ListPage'}" class="rounded px-4 py-1 bg-red-500 text-white font-medium hover:bg-red-600 transition">
+        <nav>
+            <router-link :to="{ name: 'ListPage'}" class=" mr-2 rounded px-4 py-1 bg-red-500 text-white font-medium hover:bg-red-600 transition">
             LİSTEM
         </router-link>
+
+        <router-link :to="{ name: 'HomePage'}" class="rounded px-4 py-1 bg-red-500 text-white font-medium hover:bg-red-600 transition">
+            ANASAYFA
+        </router-link>
+        </nav>
+        
     </header>
 </template>

@@ -6,6 +6,7 @@ import router from "./router"
 import "@/assets/tailwind.css"
 import appHeader from "@/components/appHeader.vue"
 
+
 const app = createApp(App);
 
 app.component("appHeader", appHeader);

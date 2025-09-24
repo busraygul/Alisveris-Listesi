@@ -8,4 +8,72 @@
     'wght' 400,
     'GRAD' 0,
     'opsz' 24;
+};
+
+.app-container {
+  background-color: #fdf4f4; 
+  border-radius: 12px;
+  padding: 50px;
+  margin-top: 3rem;
+  width: 1000px;
+  max-width: 100%;
+  box-shadow: 0 8px 20px rgba(216, 4, 4, 0.15); /* gölge efekti */
+}
+
+/* Ortalamak için dış kapsayıcı */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;     /* tam ekran yüksekliği */
+  background: #fff;   /* açık gri arka plan */
+}
+
+/* Card kutusu */
+.card {
+  background: #f7cbe6;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 1256px;
+  height: 683px;
+  text-align: center;
+}
+
+/* Başlık */
+.card h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input + button kapsayıcı */
+.form-group {
+  display: flex;
+  gap: 8px;
+}
+
+/* Input alanı */
+.form-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Buton */
+.form-group button {
+  padding: 10px 16px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.form-group button:hover {
+  background-color: #db2777; /* daha koyu pembe */
 }
