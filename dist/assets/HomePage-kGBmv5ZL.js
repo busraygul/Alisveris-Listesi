@@ -1,1 +1,0 @@
-import{_ as e}from"./AddItem-lCcActUl.js";import{c as o,o as a,a as t}from"./index-CmSPSwid.js";const s={class:"bg-pink-100 mx-auto mt-8"},p={__name:"HomePage",setup(r){return(c,_)=>(a(),o("div",s,[t(e,{showPopular:!0})]))}};export{p as default};
