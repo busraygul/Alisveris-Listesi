@@ -25,7 +25,7 @@ LocalStorage desteği sayesinde veriler kaybolmaz.
 ## 📷 Ekran Görüntüsü
 
 ![HomePage](src/assets/HomePage.png)
-![LoginPage](src/assets/LoginPage.png)
+![ListPage](src/assets/ListPage.png)
 
 ---
 
@@ -58,6 +58,8 @@ npm run dev
 
 # Üretim için build al
 npm run build
+
+---
 
 👩‍💻 Geliştirici
 
