@@ -59,9 +59,10 @@ npm run dev
 # Üretim için build al
 npm run build
 
+```
 ---
 
-##👩‍💻 Geliştirici
+👩‍💻 Geliştirici
 
 [GitHub Profilim](https://github.com/busraygul)
 
