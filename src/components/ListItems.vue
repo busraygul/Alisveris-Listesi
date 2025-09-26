@@ -18,27 +18,23 @@ const filteredItems = computed(() => {
 
 <template>
     <div>
-        <div class="filters">
-            <div class="flex gap-2">
-                <!-- Hepsi -->
-                <button @click="filter = 'all'" class="px-3 py-1 rounded-md border text-sm"
-                    :class="filter === 'all' ? 'bg-rose-500 text-white border-rose-500' : 'bg-white border-rose-300'">
-                    Hepsi
-                </button>
+        <div class="filters flex gap-2">
+            <button @click="filter = 'all'" class="px-3 py-1 rounded-md border text-sm"
+                :class="filter === 'all' ? 'bg-rose-500 text-white border-rose-500' : 'bg-white border-rose-300'">
+                Hepsi
+            </button>
 
-                <!-- Satın alınmadı -->
-                <button @click="filter = 'todo'" class="px-3 py-1 rounded-md border text-sm"
-                    :class="filter === 'todo' ? 'bg-rose-500 text-white border-rose-500' : 'bg-white border-rose-300'">
-                    Satın alınmadı
-                </button>
+            <button @click="filter = 'todo'" class="px-3 py-1 rounded-md border text-sm"
+                :class="filter === 'todo' ? 'bg-rose-500 text-white border-rose-500' : 'bg-white border-rose-300'">
+                Satın alınmadı
+            </button>
 
-                <!-- Satın alındı -->
-                <button @click="filter = 'done'" class="px-3 py-1 rounded-md border text-sm"
-                    :class="filter === 'done' ? 'bg-rose-500 text-white border-rose-500' : 'bg-white border-rose-300'">
-                    Satın alındı
-                </button>
-            </div>
+            <button @click="filter = 'done'" class="px-3 py-1 rounded-md border text-sm"
+                :class="filter === 'done' ? 'bg-rose-500 text-white border-rose-500' : 'bg-white border-rose-300'">
+                Satın alındı
+            </button>
         </div>
+
         <div class="text-right mb-2">
             <small>Satın Alınan Ürün: {{ doneCount }} </small>
             <br>

@@ -33,9 +33,8 @@ export default createStore({
 
   plugins: [
     createPersistedState({
-      key: 'app.v1',          // localStorage anahtarı
-      paths: ['items'] // SADECE bunları kalıcı yap
-      // storage belirtmezsen default: window.localStorage
+      key: 'app.v1',
+      paths: ['items']
     })
   ]
 })

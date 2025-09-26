@@ -3,7 +3,7 @@ import ListItems from './ListItems.vue';
 import PopularItems from './PopularItems.vue';
 import { ref } from 'vue'
 import { useStore } from 'vuex'
-import { computed } from 'vue'
+
 const props = defineProps({
   showPopular: { type: Boolean, default: false },
   showItems: { type: Boolean, default: false },
@@ -12,13 +12,7 @@ const props = defineProps({
 
 const newItem = ref('')
 const items = ref([]) //anasayfadan ekleme yaparken array olan itemstan çekiyorum.
-const filter = ref('all')
 
-const filteredItems = computed(() => {
-  if (filter.value === 'done') return items.value.filter(i => i.done)
-  if (filter.value === 'todo') return items.value.filter(i => !i.done)
-  return items.value
-})
 const store = useStore()
 
 function addItem() {
