@@ -2,6 +2,7 @@
 import ListItems from './ListItems.vue';
 import PopularItems from './PopularItems.vue';
 import { ref } from 'vue'
+import { useStore } from 'vuex'
 
 const props = defineProps({
   showPopular: { type: Boolean, default: false },
@@ -10,24 +11,24 @@ const props = defineProps({
 })
 
 const newItem = ref('')
-const items = ref([])
+const items = ref([]) //anasayfadan ekleme yaparken array olan itemstan çekiyorum.
+
+const store = useStore()
 
 function addItem() {
+  store.commit('ADD_ITEM', newItem.value)
   if (newItem.value.trim() !== '') {
-    items.value.push(newItem.value.trim());
+    items.value.push({ id: Date.now(), text: newItem.value.trim(), done: false });
     newItem.value = '';
   }
 }
-
-
-
 </script>
 
 <template>
   <div class="card-container">
     <div class="card ">
       <div class="form-group mt-5 mb-20">
-        <input v-model="newItem" class="mr-5" type="text" placeholder="Ürün adı" />
+        <input v-model="newItem" class="mr-5 uppercase" type="text" placeholder="Ürün adı" @keyup.enter="addItem" />
         <button @click="addItem" class="bg-red-500">Ekle</button>
       </div>
       <PopularItems v-if="props.showPopular" />

@@ -23,9 +23,10 @@
 .card-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;  
-  background: #fff;  
+  align-items: flex-start;   /* üstten hizala ki kart uzayabilsin */
+  min-height: 100vh;
+  padding: 24px;             /* kenarlardan nefes */
+  background: #fff;
 }
 
 .card {
@@ -33,10 +34,13 @@
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 1256px;
-  height: 683px;
-  text-align: center;
+  width: 100%;
+  max-width: 1256px;         /* sabit genişlik yerine üst sınır */
+  height: auto;              /* kritik: sabit yükseklik YOK */
+  min-height: 683px;         /* opsiyonel: ilk görünüm yüksekliği */
+  box-sizing: border-box;
 }
+
 
 .card h2 {
   margin-bottom: 16px;
@@ -69,4 +73,13 @@
 
 .form-group button:hover {
   background-color: #db2777;
+}
+
+@layer components {
+  .populerItems {
+    @apply bg-white text-red-700 font-semibold text-center py-3 rounded-lg cursor-pointer
+           hover:bg-pink-400 hover:text-white
+           focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
 }
