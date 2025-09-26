@@ -61,7 +61,7 @@ npm run build
 
 ---
 
-👩‍💻 Geliştirici
+##👩‍💻 Geliştirici
 
 [GitHub Profilim](https://github.com/busraygul)
 
